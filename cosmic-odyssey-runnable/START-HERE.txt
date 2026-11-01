@@ -1,0 +1,13 @@
+HOW TO RUN (no install needed)
+1. Unzip the whole folder.
+2. Double-click index.html  (keep index.html, app.css and app.js together in the same folder).
+3. Needs internet only for Google Fonts. Works best in Chrome / Edge / Firefox.
+
+HOW TO EDIT
+- Your content lives in source/src/data/ (profile.js, skills.js, projects.js, timeline.js, story.js).
+- After editing, rebuild the double-click files:
+    cd source
+    npm install
+    npm run dev                 (live preview at http://localhost:5173)
+    npx esbuild src/main.js --bundle --format=iife --minify --outfile=../app.js
+  (this regenerates ../app.js and ../app.css next to index.html)

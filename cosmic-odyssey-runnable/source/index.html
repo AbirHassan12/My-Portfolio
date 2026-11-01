@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#03040B">
+<meta name="description" content="Abir Hassan — software development, data analytics and cybersecurity. An interactive story told through a digital universe.">
+<title>Abir Hassan — Cosmic Odyssey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="load"><div><div class="sg">ESTABLISHING SIGNAL…</div><div id="loadbar"><i></i></div></div></div>
+<div id="prog"></div><div id="tip" aria-hidden="true"></div><div id="cur"></div>
+<canvas id="c" aria-hidden="true"></canvas><div id="vig"></div>
+<div id="card" aria-hidden="true"><small></small><b></b></div>
+<nav aria-label="Main"><span class="logo">ABIR HASSAN</span><span class="st"><b>●</b> COSMIC SYSTEM ONLINE</span>
+<button id="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu">☰</button>
+<ul id="menu"><li><a href="#home">HOME</a></li><li><a href="#about">ABOUT</a></li><li><a href="#skills">SKILLS</a></li><li><a href="#projects">PROJECTS</a></li><li><a href="#experience">EXPERIENCE</a></li><li><a href="#contact">CONTACT</a></li></ul></nav>
+<aside id="rail" aria-label="Story chapters"></aside><p id="cap" aria-live="off"></p>
+<main id="main">
+<section id="home" data-ch="0" class="hero">
+ <div class="lab rv">TRANSMISSION RECEIVED // WELCOME TO MY UNIVERSE</div>
+ <p class="sg rv hi">HI, I'M</p><h1 class="big rv" id="hname"></h1>
+ <p class="tag rv" id="htag"></p><p class="rv" id="hdesc" style="max-width:560px;color:var(--tx2)"></p>
+ <div class="hchips rv" id="hchips"></div>
+ <div class="row rv"><a class="btn mag" href="#about">[ EXPLORE MY UNIVERSE ]</a><a class="btn alt mag" id="cv" href="#">[ DOWNLOAD CV ]</a></div>
+ <div class="sc">SCROLL TO EXPLORE ↓</div>
+</section>
+<section id="about" data-ch="1"><div class="lab"></div><h2 class="rv">EVERY UNIVERSE HAS AN ORIGIN.</h2>
+ <div class="two"><div class="glass rv" id="abt"></div><div class="tl" id="aboutTl"></div></div><div class="focus" id="focus"></div></section>
+<section id="skills" data-ch="2"><div class="lab"></div><h2 class="rv">MY TECHNICAL GALAXY</h2>
+ <div class="planets" id="planets"></div><div class="glass" id="holo" aria-live="polite"></div></section>
+<section id="projects" data-ch="3"><div class="lab"></div><h2 class="rv">MY DIGITAL CONSTELLATION</h2>
+ <div class="chips" id="chips"></div><div class="glass"><svg id="const" viewBox="0 0 800 360" role="group" aria-label="Project constellation"></svg></div><div class="cards" id="cards"></div></section>
+<section id="experience" data-ch="4"><div class="lab"></div><h2 class="rv">MY JOURNEY</h2><div class="tl" id="expTl"></div></section>
+<section id="contact" data-ch="5"><div class="lab"></div><h2 class="rv">LET'S CONNECT ACROSS THE UNIVERSE.</h2>
+ <div class="two"><div class="glass links" id="links"></div>
+ <form class="glass" id="form" novalidate><input name="name" aria-label="Name" autocomplete="name" placeholder="Name"><input name="email" type="email" aria-label="Email" autocomplete="email" placeholder="Email"><input name="subject" aria-label="Subject" placeholder="Subject"><textarea name="message" aria-label="Message" rows="4" placeholder="Message"></textarea><div class="err" id="err" role="alert"></div><button class="btn mag" id="send">SEND TRANSMISSION</button><div id="msg" role="status" aria-live="polite"></div></form></div>
+ <footer>© <span id="yr"></span> Abir Hassan — built as an interactive story.</footer></section>
+</main>
+<div id="modal"><div class="glass" id="mbox" role="dialog" aria-modal="true" aria-label="Project details"></div></div>
+<button id="snd" aria-pressed="false">♪ SOUND OFF</button>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
